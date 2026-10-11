@@ -1,4 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-color: #dee2e6 !important;
+}
+
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 110px;
+    height: 110px;
+  }
 }
